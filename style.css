@@ -16,16 +16,39 @@ body {
 
 nav {
     border: solid 3px red;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 header {
     border: solid 3px red;
 
-    height: 50vh;
+    min-height: 50vh;
 
     display: flex;
     flex-direction: column;
     margin: auto;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
     justify-content: center;
 }
 
@@ -39,7 +62,7 @@ header {
     gap: 15px;
     justify-content: center;
     padding: 15px;
-    width: 100%;
+    /* width: 100%; */
 
     margin: auto;
     text-align: center;
@@ -60,9 +83,62 @@ header {
 
 footer {
     border: solid 3px red;
+
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .featured-container {
     height: 50vh;
     border: solid 3px blue;
+}
+
+.item-grid {
+    border: solid 3px palevioletred;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+    /* width: 100%; */
+
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    border: solid 3px lime;
+    width: 250px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.item-image {
+    border: solid 1px gray;
+    object-fit: cover;
+    margin: auto;
+    height: 100px;
+    height: 85%;
+    width: 100px;
+    width: 100%;
+}
+
+.item-name {
+    border: solid 1px gray;
+}
+
+.item-price {
+    border: solid 1px gray;
 }

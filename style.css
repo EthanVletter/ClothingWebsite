@@ -10,6 +10,7 @@ html {
     --dark-gray: #505050;
 
     --dark-gradient: rgba(27, 28, 33, 1);
+    --dark-gradient2: rgb(21, 22, 26);
     --light-gradient: rgba(63, 64, 68, 1);
 }
 
@@ -79,8 +80,8 @@ header {
     /* background: rgb(71, 74, 81);
     background: radial-gradient(circle, rgba(71, 74, 81, 1) 0%, rgba(30, 33, 38, 1) 85%); */
 
-    background: rgb(63, 64, 68);
-    background: radial-gradient(circle at 50% -100%, rgba(63, 64, 68, 1) 0%, rgba(27, 28, 33, 1) 100%);
+    /* background: rgb(63, 64, 68); */
+    background: radial-gradient(circle at 50% 0%, rgba(63, 64, 68, 1) 0%, rgba(27, 28, 33, 1) 70%);
 
     color: white;
 
@@ -93,7 +94,7 @@ header {
 }
 
 .full-name {
-    height: 200px;
+    height: 100px;
 }
 
 .heading {
@@ -144,8 +145,10 @@ footer {
     /* border: solid 3px red; */
     border: solid 3px var(--dark-gray);
     background-color: var(--dark-gray);
-    font-size: 16px;
-    color: white;
+    border: solid 3px var(--light-gradient2);
+    background-color: var(--dark-gradient2);
+    font-size: 12px;
+    color: rgb(187, 187, 187);
 
     height: 80px;
     display: flex;
@@ -156,11 +159,11 @@ footer {
 
 .featured-container {
     height: 50vh;
-    border: solid 3px blue;
+    /* border: solid 3px blue; */
 }
 
 .item-grid {
-    border: solid 3px palevioletred;
+    /* border: solid 3px palevioletred; */
 
     display: flex;
     flex-wrap: wrap;
@@ -192,8 +195,8 @@ footer {
 
     box-shadow: 0 1px 5px 0 black;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
 
     display: flex;
     flex-direction: column;
@@ -232,4 +235,6 @@ footer {
     width: 50%;
     display: flex;
     margin-top: 0px;
+    height: 0px;
+    border: solid 1px var(--light-gradient);
 }

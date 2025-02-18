@@ -157,9 +157,37 @@ footer {
     align-items: center;
 }
 
-.featured-container {
-    height: 50vh;
+.featured-block {
+    /* height: 60vh; */
     /* border: solid 3px blue; */
+}
+
+.featured-container {
+    /* display: flex; */
+    /* border: solid 1px red; */
+}
+
+.featured-slider {
+    display: flex;
+    /* margin: auto; */
+    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.featured-slider .fsleft,
+.featured-slider .fsright {
+    /* border: solid 1px red; */
+    background-color: var(--light-gradient);
+    border-radius: 50%;
+    padding: 20px;
+    opacity: 0.2;
+    color: white;
+}
+
+.featured-image {
+    height: 500px;
 }
 
 .item-grid {
